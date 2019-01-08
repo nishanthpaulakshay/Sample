@@ -1,1 +1,26 @@
-Hello World
+1. Normality in Vector
+## Generate two data sets
+## First Normal, second from a t-distribution
+words1 = rnorm(100); words2 = rt(100, df=3)
+
+## Have a look at the densities
+plot(density(words1));plot(density(words2))
+
+## Perform the test
+shapiro.test(words1); shapiro.test(words2)
+
+## Plot using a qqplot
+qqnorm(words1);qqline(words1, col = 2)
+qqnorm(words2);qqline(words2, col = 2)
+
+
+2. 
+Why is the normal distribution important?
+
+Many (but not all!) variables in fields such as psychology tend to have normally distributed scores.
+The fairly widespread occurrence of normally distributed scores may be due to random processes that tend to generate normal distributions.
+The sampling distribution for statistics such as M (sample mean) tend to be normally distributed (even when the distribution of individual X scores is not perfectly normal). 
+This is based on the Central Limit Theorem, which was developed using imaginary normally distributed scores. Monte Carlo simulations show that even when assumptions about distribution shape for individual scores are violated, sampling distributions may still be fairly normal (Sawilowsky & Blair, 1992.) However, there are limits to this robustness against violations of assumptions.
+
+The shape of the sampling distribution is normal for statistics such as M when population standard deviation sigma is known and other assumptions are met. The shape of the distribution is modified normal; i.e., a t distribution, when population standard deviation sigma is not known and sample standard deviation SD is used to estimate it. The sampling distribution is the basis for construction of statistical significance tests and Confidence Intervals (in other words, the statistical techniques taught in most introductory courses and widely relied on in research reports).
+However, keep in mind that not all X variables have normally distributed scores; and that not all sample statistics have normally shaped sampling distributions. In these situations, different analyses not taught in introductory courses are often needed, and tools such as bootstrapping are sometimes used.
