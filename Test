@@ -24,3 +24,28 @@ This is based on the Central Limit Theorem, which was developed using imaginary 
 
 The shape of the sampling distribution is normal for statistics such as M when population standard deviation sigma is known and other assumptions are met. The shape of the distribution is modified normal; i.e., a t distribution, when population standard deviation sigma is not known and sample standard deviation SD is used to estimate it. The sampling distribution is the basis for construction of statistical significance tests and Confidence Intervals (in other words, the statistical techniques taught in most introductory courses and widely relied on in research reports).
 However, keep in mind that not all X variables have normally distributed scores; and that not all sample statistics have normally shaped sampling distributions. In these situations, different analyses not taught in introductory courses are often needed, and tools such as bootstrapping are sometimes used.
+
+3.
+Cost Function : A cost function is something you want to minimize. For example, your cost function might be the sum of squared errors 
+over your training set. Gradient descent is a method for finding the minimum of a function of multiple variables. So you can use gradient
+descent to minimize your cost function. If your cost is a function of K variables, then the gradient is the length-K vector that 
+defines the direction in which the cost is increasing most rapidly. So in gradient descent, you follow the negative of the gradient 
+to the point where the cost is a minimum. If someone is talking about gradient descent in a machine learning context, the cost function
+is probably implied (it is the function to which you are applying the gradient descent algorithm).
+
+Learning function: The most common type of machine learning is to learn the mapping Y=f(X) to make predictions of Y for new X.
+
+This is called predictive modeling or predictive analytics and our goal is to make the most accurate predictions possible.
+
+As such, we are not really interested in the shape and form of the function (f) that we are learning, only that it makes accurate 
+predictions.
+
+We could learn the mapping of Y=f(X) to learn more about the relationship in the data and this is called statistical inference. 
+If this were the goal, we would use simpler methods and value understanding the learned model and form of (f) above making accurate 
+predictions.
+
+When we learn a function (f) we are estimating its form from the data that we have available. As such, this estimate will have error.
+It will not be a perfect estimate for the underlying hypothetical best mapping from Y given X.
+
+Much time in applied machine learning is spent attempting to improve the estimate of the underlying function and in term improve the 
+performance of the predictions made by the model.
